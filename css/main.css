@@ -14,12 +14,13 @@ body {
 a, button, input {
     font-family: Oxygen;
     outline:none;
+    text-decoration: none;
 }
 .sidebar {
 	position:absolute;
 	top:10px;
 	left:10px;
-	background-color:rgb(0,120,200);
+	background-color:rgba(0,120,200, 0.7);
 	height:calc(100% - 20px);
 	height:auto;
 	width:250px;
@@ -63,12 +64,16 @@ a, button, input {
 	top:10px;
 	left:260px;
 	height:75px;
-	background-color:rgb(0,120,200);
+	background-color:rgba(0,120,200, 0.7);
 	width:calc(100% - 270px);
 	border-top-right-radius:15px;
 	border-bottom-right-radius:15px;
 	margin-right:10px;
 	overflow:hidden;
+}
+.header > a {
+    margin-left: 25px;
+    margin-right: 25px;
 }
 .hbtn {
 	height:75px;
@@ -77,8 +82,6 @@ a, button, input {
 	background-color:transparent;
     color:white;
 	border:0px;
-	margin-right:25px;
-	margin-left:25px;
 	text-decoration:none;
     transition: background-color 200ms linear;
 }
@@ -90,10 +93,31 @@ a, button, input {
 	position:absolute;
 	top:95px;
 	left:270px;
-	background-color:rgb(0,120,200);
+	background-color:rgba(0,120,200, 0.7);
 	color:rgb(1000, 1000, 1000);
 	width:calc(100% - 280px);
 	height:auto;
 	border-top-left-radius:15px;
 	border-top-right-radius:15px;
+    text-align: center;
+    font-size: 50px;
+}
+.content_btn {
+    background-color: rgba(140,140,140, 0.7);
+    border:0px;
+    font-size:50px;
+    min-width:45%;
+    width:auto;
+    display:inline-block;
+    margin: 20px;
+    padding:5px;
+    border-radius: 15px;
+    transition: background-color 200ms ease-in-out;
+}
+.content_btn:hover {
+    background-color: rgba(215, 10, 45, 1);
+    cursor:pointer;
+}
+.content_btn > a:visited, a:link {
+    color: black;
 }
