@@ -1,3 +1,0 @@
-Sports/Music: width 1000px
-Students/Teachers: width 1000px
-YB Picture: 500px
