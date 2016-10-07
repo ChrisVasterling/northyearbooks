@@ -1,10 +1,82 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>North High Yearbooks</title>
+        <title>North Yearbooks</title>
+        <link rel="icon" href="icon.ico"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <style>
+            html, body {
+                margin:0px;
+                font-family: Roboto;
+            }
+            .ybk {
+                width:50%;
+                height:50%;
+                margin:0px;
+                float:left;
+                display:inline-block;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+                position:relative;
+            }
+            .ybk:nth-child(1) {
+                background-image: url("yb2016.jpg");
+            }
+            .ybk:nth-child(2) {
+                background-image: url("yb2017.jpg");
+            }
+            .ybk:nth-child(3) {
+                background-image: url("yb2018.jpg");
+            }
+            .ybk:nth-child(4) {
+                background-image: url("yb2019.jpg");
+            }
+            .ybDetails {
+                background-color: rgba(0,120,200, .3);
+                height: 100%;
+                position: relative;
+                top: 0%;
+                text-align: center;
+                font-size:50px;
+            }
+            p {
+                margin:0px;
+                padding:0px;
+                position: relative;
+                top: calc(50% - 25px);
+                background-color: rgb(0,120,200);
+            }
+            a, a:visited, a:link {
+                color:rgb(215, 10, 45);
+            }
+        </style>
     </head>
-
-    <body>
-        <a href='http://chrisvasterling.github.io/2016Northyearbook/'>2016</a>
-    </body>
+    <div class="ybk">
+        <div class="ybDetails">
+            <p>
+                <a href="http://chrisvasterling.github.io/2016Northyearbook">2016</a>
+            </p>
+        </div>
+    </div>
+    <div class="ybk">
+        <div class="ybDetails">
+            <p>
+                <a href="http://chrisvasterling.github.io/2017Northyearbook">2017</a>
+            </p>
+        </div>
+    </div>
+    <div class="ybk">
+        <div class="ybDetails">
+            <p>
+                <a href="http://chrisvasterling.github.io/2018Northyearbook">2018</a>
+            </p>
+        </div>
+    </div>
+    <div class="ybk">
+        <div class="ybDetails">
+            <p>
+                <a href="http://chrisvasterling.github.io/2019Northyearbook">2019</a>
+            </p>
+        </div>
+    </div>
 </html>
